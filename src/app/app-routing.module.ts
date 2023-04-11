@@ -3,14 +3,15 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+    path:'',
+    loadChildren:()=>import('./pages/splitlayout/splitlayout.module').then(m=>m.SplitlayoutPageModule)
   },
   {
-    path: '',
-    redirectTo: 'home',
-    pathMatch: 'full'
-  },
+    path:'',
+    redirectTo:'app',
+    pathMatch:'full'
+  }
+  
 ];
 
 @NgModule({

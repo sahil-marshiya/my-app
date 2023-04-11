@@ -1,0 +1,30 @@
+  <div class="profile">
+      <img src="" class="profile_img" />
+      <div class="camera">
+        <ion-icon color="light" name="camera-outline"></ion-icon>
+      </div>
+    </div> 
+    forms for entering details
+     <form #f="ngForm"> 
+      <ion-item fill="outline" mode="md" shape="round">
+        <ion-label position="floating">Name</ion-label>
+        <ion-input type="text" name="fullName" required></ion-input>
+        <ion-note></ion-note>
+      </ion-item>
+      <ion-item fill="outline" mode="md" disabled shape="round">
+        <ion-label position="floating">MobileNumber</ion-label>
+        <ion-input pattern="^[0-9]{10}$" maxlength="10" type="tel" name="mobileNumber" required></ion-input>
+      </ion-item>
+      <ion-item fill="outline" mode="md" shape="round">
+        <ion-label position="floating">Alternate Mobile Number</ion-label>
+        <ion-input pattern="^[0-9]{10}$" maxlength="10" type="tel" name="altMobileNumber"></ion-input>
+        <ion-note slot="error">sdsdsdss</ion-note>
+      </ion-item>
+      <ion-item fill="outline" mode="md" shape="round">
+        <ion-label position="floating">About me</ion-label>
+        <ion-textarea name="About"></ion-textarea>
+      </ion-item>
+      <div style="margin: 20px;" class="ion-text-center">
+        <ion-button mode="ios" expand="full" type="submit" shape="round" color="primary">Save Changes</ion-button>
+      </div>
+    </form> 
